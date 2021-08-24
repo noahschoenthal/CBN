@@ -1,4 +1,2 @@
 # Create-Branch-Name
-This will refactor your name to a dev friendly branchname.
-
-Thanks for using my tool.
+This will refactor your userstory to a cleancode branchname.
