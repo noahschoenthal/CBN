@@ -11,26 +11,25 @@ namespace createBranchName
             bool endProgram = false;
             while (!endProgram)
             {
-                Console.WriteLine("Type the story name in:\n");
-                string inputReadLine = Console.ReadLine();
-                Console.WriteLine(
-                    "Which symbol should replace the spaces? Write one of them (to replace with blank leave it empty by pressing enter):\n '+' '-' ':' '_' '/'\n");
-                string trimCharacter = Console.ReadLine();
+                Console.Write("Your text:\n");
+                var inputReadLine = Console.ReadLine();
+                Console.WriteLine();
+                Console.Write("Which symbol should replace the spaces? \n");
+                var trimCharacter = Console.ReadLine();
+                Console.WriteLine();
 
                 if (inputReadLine != null)
                 {
-                    inputReadLine = inputReadLine.Replace(" ", trimCharacter);
-                    inputReadLine.ToLower();
-                    Clipboard.SetText(inputReadLine);
+                    inputReadLine = inputReadLine.Replace(" ", trimCharacter).ToLower();
+                    Clipboard.SetText("feature/{YOURNUMBER}_" + inputReadLine);
+                    Console.Write("Branch name got successfully copied.\n");
                 }
                 else
                 {
-                    Console.WriteLine("Please type text with space.\n");
+                    Console.WriteLine("Creation of new text was unsuccessful, please write text with space.\n");
                 }
 
-                Console.Write("Branch name got successfully copied.\n");
-
-                Console.Write("Press 'e' to close the app, press any other key and Enter to continue: ");
+                Console.Write("Write 'e' to close, any other key to continue: ");
                 if (Console.ReadLine() == "e") endProgram = true;
 
                 Console.WriteLine("\n");
