@@ -11,11 +11,12 @@ namespace createBranchName
             bool endProgram = false;
             while (!endProgram)
             {
-                Console.WriteLine("Your text:\n");
+                Console.Write("Your text:\n");
                 var inputReadLine = Console.ReadLine();
-                Console.WriteLine(
-                    "Which symbol should replace the spaces? Write one of them (to replace with blank leave it empty by pressing enter):\n '+' '-' ':' '_' '/'\n");
+                Console.WriteLine();
+                Console.Write("Which symbol should replace the spaces? \n");
                 var trimCharacter = Console.ReadLine();
+                Console.WriteLine();
 
                 if (inputReadLine != null)
                 {
@@ -28,7 +29,7 @@ namespace createBranchName
                     Console.WriteLine("Creation of new text was unsuccessful, please write text with space.\n");
                 }
 
-                Console.Write("'e' to close, any other key to continue: ");
+                Console.Write("Write 'e' to close, any other key to continue: ");
                 if (Console.ReadLine() == "e") endProgram = true;
 
                 Console.WriteLine("\n");
