@@ -1,5 +1,5 @@
 # Create Branch Name
-This will refactor your userstory to a clean branchname.
+This will refactor/recreate your userstory name to a clean and usable branchname.
 
 **Currently searching some contributors**
 
