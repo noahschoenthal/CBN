@@ -11,18 +11,14 @@ namespace createBranchName
             bool endProgram = false;
             while (!endProgram)
             {
-                Console.Write("Your text:\n");
+                Console.Write("~~~ WELCOME TO THE CREATE BRANCHNAME GENERATOR ~~~\n\n PLEASE WRITE YOUR TEXT:\n\n");
                 var inputReadLine = Console.ReadLine();
                 Console.WriteLine();
                 Console.Write("Which symbol should replace the spaces? \n");
-                var trimCharacter = Console.ReadLine();
-                Console.WriteLine();
 
                 if (inputReadLine != null)
                 {
-                    inputReadLine = inputReadLine.Replace(" ", trimCharacter).ToLower();
-                    Clipboard.SetText("feature/{YOURNUMBER}_" + inputReadLine);
-                    Console.Write("Branch name got successfully copied.\n");
+                    ReplaceText(inputReadLine);
                 }
                 else
                 {
@@ -35,6 +31,18 @@ namespace createBranchName
                 Console.WriteLine("\n");
             }
             return;
+        }
+
+        private static void ReplaceText(string inputReadLine)
+        {
+            var trimCharacter = Console.ReadLine();
+            Console.WriteLine();
+            inputReadLine = inputReadLine.TrimEnd(',').Replace(" ",trimCharacter).
+                ToLower().Replace(",", "").Replace(":",trimCharacter)
+                .Replace("_",trimCharacter);
+            Clipboard.SetText("feature/{YOURNUMBER}_" + inputReadLine);
+            Console.WriteLine("Created Branchname moved into your clipboard:\n" + inputReadLine + "\n");
+            Console.Write("Branch name got successfully copied.\n");
         }
     }
 }
