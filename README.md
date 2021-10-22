@@ -3,6 +3,6 @@ This will refactor your userstory to a clean branchname.
 
 **Currently searching some contributors**
 
-*Interested? Write me a mail _answered in 1 hour_*
+*Interested? Write me a mail, I answer by 1 hour*
 
 - thebranchname@gmail.com
