@@ -2,10 +2,10 @@
 CBN refactors/recreates the userstory name into a great branchname.
 
 ## Getting started
-[website]: https://github.com/TheVerux/Create-Branch-Name.git
+[CBN]: https://github.com/TheVerux/Create-Branch-Name.git
 
 
-Link to clone the project: [website]
+Link to clone the project: [CBN]
 
 Get some help:
 ```
