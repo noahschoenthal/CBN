@@ -1,7 +1,7 @@
 # Create Branch Name
 CBN refactors/recreates the userstory name into a great branchname.
 
-# Good to know:
+## Good to know for contributors:
 The ***master*** branch is called ***king***.  
 The ***develop*** branch is called ***queen***.
 
