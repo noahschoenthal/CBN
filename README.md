@@ -2,8 +2,8 @@
 CBN refactors/recreates the userstory name into a great branchname.
 
 # Good to know:
-The *master* branch is called *king*.
-The *develop* branch is called *queen*.
+The ***master*** branch is called ***king***.
+The ***develop*** branch is called ***queen***.
 
 ## Getting started
 [CBN]: https://github.com/TheVerux/Create-Branch-Name.git
