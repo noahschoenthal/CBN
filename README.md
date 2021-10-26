@@ -11,11 +11,6 @@ The ***develop*** branch is called ***queen***.
 
 Link to clone the project: [CBN]
 
-Get some help:
-```
-$ cbnhelp
-```
-
 **Currently searching some contributors**
 
 *Interested? Write a mail, I reply within one hour.*  
